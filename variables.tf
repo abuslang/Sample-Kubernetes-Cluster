@@ -1,12 +1,11 @@
 variable "client_id" {
 
-  default = "<<Your Client here>>"
+  
 
 }
 variable "client_secret" {
 
-  default = "<<Your Secret here>>"
-
+ 
 }
 
 variable "agent_count" {
