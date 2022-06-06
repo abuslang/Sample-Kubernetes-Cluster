@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: vuln1
-        image: vulhub/spring-webmvc:5.3.17
+        image: vmania11/demoattacklab1:test
         ports:
         - containerPort: 8080
