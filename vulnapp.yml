@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vuln-deployment
+  labels:
+    app: vuln1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: vuln1
+  template:
+    metadata:
+      labels:
+        app: vuln1
+    spec:
+      containers:
+      - name: vuln1
+        image: vulhub/spring-webmvc:5.3.17
+        ports:
+        - containerPort: 8080
