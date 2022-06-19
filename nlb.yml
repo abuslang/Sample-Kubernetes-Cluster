@@ -8,4 +8,3 @@ spec:
     - port: 8080 
     selector:
         app: vuln1
-docker pull vmania11/demoattacklab1:test
